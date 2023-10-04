@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="top">
+        <h2>Registration Form</h2>
+    </div>
+    
+    <div class="container">
+        
+        <div class="left">
+            <form id="registrationForm">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="small-input" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="small-input" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" class="small-input" required>
+                </div>
+                <div class="input-group">
+                    <label for="imageLink">Image Link:</label>
+                    <input type="url" id="imageLink" name="imageLink" class="small-input" required>
+                </div>
+                <div class="input-group">
+                    <label>Gender:</label>
+                    <div class="gender-radio">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender-radio">
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="skills">Skills:</label>
+                    <div class="skills-checkboxes">
+                        <input type="checkbox" id="html" name="skills[]" value="HTML">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" id="css" name="skills[]" value="CSS">
+                        <label for="css">CSS</label>
+                        <input type="checkbox" id="js" name="skills[]" value="JavaScript">
+                        <label for="js">JavaScript</label>
+                        <input type="checkbox" id="reactjs" name="skills[]" value="ReactJS">
+                        <label for="reactjs">ReactJS</label>
+                        <input type="checkbox" id="bootstrap" name="skills[]" value="Bootstrap">
+                        <label for="bootstrap">Bootstrap</label>
+                        <input type="checkbox" id="python" name="skills[]" value="Python">
+                        <label for="python">Python</label>
+                        <input type="checkbox" id="cpp" name="skills[]" value="C++">
+                        <label for="cpp">C++</label>
+                        <input type="checkbox" id="c" name="skills[]" value="C">
+                        <label for="c">C</label>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="clearButton">Clear</button>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <div class="output">
+                <div class="data">
+                    <h2>Registered Data</h2>
+                    <div id="registeredData"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
